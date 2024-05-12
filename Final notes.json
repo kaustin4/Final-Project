@@ -1,0 +1,102 @@
+[
+    {
+        "title": " Help Git Command Git init",
+        "text": "initialize new git repository, git clone[url] clone repository local, commit -m -> commit changes to local computer, git push[branch_name] -> push commits from local to reposito",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "#Git Commands",
+        "note_id": "1",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here \nprint('Hello World')",
+        "meta": "note_id 1 created 2024-05-12 14:06:27.520765, EDT by Kelly Austin"
+    },
+    {
+        "title": "Recursions ",
+        "text": "Recursions requires a base case -> without it recursion would never endEx: def factorial(n) if n==0 or n ==1 -> return 1, used for factorials, data structures, and tree structures, base of recursion is that it calls itself",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "#recursions",
+        "note_id": "2",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here \nprint('Hello World')",
+        "meta": "note_id 2 created 2024-05-12 14:07:12.375913, EDT by Kelly Austin"
+    },
+    {
+        "title": "OOPS",
+        "text": "OOP def__init__(self, a, b) -> self.a = a, self.b = b alwaysset the parameters equal to itself, also remember to make instances of the values your are creating Ex: Class car -> would include everything stated",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "#OOP",
+        "note_id": "3",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here \nprint('Hello World')",
+        "meta": "note_id 3 created 2024-05-12 14:07:43.039331, EDT by Kelly Austin"
+    },
+    {
+        "title": "Read Text File",
+        "text": "r' is to open text file for reading -> at the beginnig of afile. 'w' opens the file for writing.\n\nEx: File_object = open(r\"File_Name\", \"Access_Mode\") Ex: File_object.write(str1) Ex: File_object.writelines(L) for L = [str1, str2, str3] -> for a string element use writeline to insert multiple strings",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "#OOP",
+        "note_id": "4",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here \nnew_notes = [] with open(\"notes1.txt\", \"r\") as f: lines = f.readlines() for i in range(0, len(lines), 3): title = lines[i].strip() text = lines[i+1].strip() meta = lines[i+2].strip() new_notes.append({'title': title, 'text': text, 'meta': meta})",
+        "meta": "note_id 4 created 2024-05-12 14:08:40.878793, EDT by Kelly Austin"
+    },
+    {
+        "title": "CSV File",
+        "text": "IMPORT CSV Ex Lab: with open(\"notes1.csv\", \"w\", newline = '') as csvfile: fieldnames = ['title', 'text', 'meta'] writer = csv.DictWriter(csvfile, fieldnames = fieldnames) writer.writeheader() for note in notes: writer.writerow(note)",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "#CSV",
+        "note_id": "5",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here \nnew_notes_csv = [] with open(\"notes1.csv\", \"r\", newline='') as csvfile: reader = csv.DictReader(csvfile) for row in reader: print(row) new_notes_csv.append(row) print(new_notes_csv)",
+        "meta": "note_id 5 created 2024-05-12 14:09:39.633588, EDT by Kelly Austin"
+    },
+    {
+        "title": "JSON",
+        "text": "Import JSON Lab Ex: ",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "",
+        "note_id": "6",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here \nwith open(\"notes1.json\", \"w\") as jsonfile:\n    json.dump(notes, jsonfile)\nwith open(\"notes1.json\", \"r\") as jsonfile:\n    new_notes_json = json.load(jsonfile)\n\nprint(\"Dictionaries\")\nprint(notes)\nprint(fieldnames)",
+        "meta": "note_id 6 created 2024-05-12 14:10:53.338005, EDT by Kelly Austin"
+    },
+    {
+        "title": "Tuples",
+        "text": "Tuples are a way to define simple classes without using definitions. You can determine a tuple using collections.namedtuple(). Here's some other things to remember. Named tuples are immutable and they improve code readibility",
+        "link": "If there is a link with this note enter it here.",
+        "tags": "#Tuples",
+        "note_id": "7",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here ",
+        "meta": "note_id 7 created 2024-05-12 14:11:24.153847, EDT by Kelly Austin"
+    },
+    {
+        "title": "Classes",
+        "text": "Classes are on of the most heavily used components in OOP. Below is a source where you can find out more",
+        "link": "https://www.w3schools.com/python/python_classes.asp",
+        "tags": "#classes",
+        "note_id": "8",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here ",
+        "meta": "note_id 8 created 2024-05-12 14:12:03.948313, EDT by Kelly Austin"
+    },
+    {
+        "title": "Structuring a repository",
+        "text": "To structure a Python repository effectively, organize it with folders for documentation, source code, tests, and examples. Utilize setup files like setup.py and setup.cfg to define installation instructions and metadata for the package. Include a requirements.txt file listing development dependencies, a README.rst file for project information, and a .gitignore file to specify which files Git should ignore. Additionally, configure a tox.ini file for running unit tests across multiple Python versions using tox, ensuring code compatibility and reliability.",
+        "link": "https://github.com/yngvem/python-project-structure?tab=readme-ov-file#structuring-a-repository",
+        "tags": "#repository",
+        "note_id": "9",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here ",
+        "meta": "note_id 9 created 2024-05-12 14:12:39.161558, EDT by Kelly Austin"
+    },
+    {
+        "title": "Dictionaries",
+        "text": "Dictionaries in Python store data in key-value pairs, providing an ordered and changeable collection. Dictionaries maintain the order of insertion, ensuring consistency in iteration. Additionally, dictionaries do not allow duplicate keys, with duplicate key assignments resulting in overwriting existing values.",
+        "link": "https://www.w3schools.com/python/python_dictionaries.asp",
+        "tags": "#dictionaries",
+        "note_id": "10",
+        "author": "Kelly Austin",
+        "snippet": "# enter executable code snippet here ",
+        "meta": "note_id 10 created 2024-05-12 14:13:40.171086, EDT by Kelly Austin"
+    }
+]
